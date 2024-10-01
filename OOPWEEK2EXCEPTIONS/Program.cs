@@ -43,9 +43,13 @@ void CalculatorApp()
         Console.WriteLine($"Result: {result}");
 
     }
-    catch (Exception ex)
+    catch (FormatException ex)
     {
-
+        Console.WriteLine("");
+    }
+    catch (DivideByZeroException ex)
+    {
+        Console.WriteLine($"You cannot divide by 0.");
     }
     finally
     {
